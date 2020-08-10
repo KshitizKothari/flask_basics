@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}
+Delete Book
+{% endblock title %}
+{% block content %}
+    <div class="container text-center">
+            <ul class="list-group">
+              <li class="list-group-item">{{user.user_email}}</li>
+              <li class="list-group-item">{{user.user_name}}</li>
+              <li class="list-group-item"></li>
+            </ul><br><hr>
+             <form action="{{url_for('authentication.user_profile',user_id=user.id)}}" method="post">
+                 <button type="submit" name="action" value="change_password" class="btn btn-info">Change Password</button>
+                 <button type="submit" name="action" value="delete_user" class="btn btn-danger">Delete Account</button>
+             </form>
+    </div>
+
+{% endblock content %}

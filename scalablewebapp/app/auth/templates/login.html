@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}
+Login Page
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        {{form.hidden_tag()}}
+        {{wtf.quick_form(form)}}
+    </div>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}
+Delete Book
+{% endblock title %}
+{% block content %}
+    <div class="container">
+            <h2>Do you wish to delete {{book.title}}?</h2>
+            <p>
+                Book Id : {{book.id}}
+                Title : {{book.title}}
+                Author : {{book.author}}
+            </p>
+            <form action="{{url_for('main.delete_book', book_id=book.id)}}" method="post">
+                <button type="submit" class="btn btn-danger">Delete</button>
+            </form>
+    </div>
+
+{% endblock content %}

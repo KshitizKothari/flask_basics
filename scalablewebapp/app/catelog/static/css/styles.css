@@ -1,0 +1,16 @@
+ <link href="https://fonts.googleapis.com/css?family=Anton|Indie+Flower&display=swap" rel="stylesheet">
+
+h1,h2,h3,h4{ font-family: 'Indie Flower', cursive;}
+html,body{height:100%; margin:0; padding:0}
+p,li{font-size:small}
+ul{position:relative; top:25px; right:7%}
+footer{position:absolute; width:100%; left:0; bottom:0; height:40px}
+a h3{position:relative; left:10%}
+
+.navbar-inverse{height:50%}
+.books{padding:25px; position:relative; left:5%; width:80%}
+.publisher{padding:25px; position:relative; left:40%;}
+.ftr{padding:25px; }
+.wrapper{ position: relative; min-height:120%;}
+.title{color:floralwhite}
+
